@@ -1,12 +1,10 @@
-
-
 def encode(message):
   if len(message) <= 2:
     message_revers = message[::-1]
     print(message_revers)
   else:
     new_msg = message[1:] + message[0]
-    print("THE DECODED MSG IS :", "xyz" + new_msg + "abc")
+    return "THE DECODED MSG IS :", "xyz" + new_msg + "abc"
     
 
 def decode(message):
@@ -15,7 +13,7 @@ def decode(message):
       print(message_revers)
     else:
       new_msg = message[3:-3]
-      print("THE ORIGINAL MSG IS :",(new_msg[-1] + new_msg[:-1]))
+      return "THE ORIGINAL MSG IS :",(new_msg[-1] + new_msg[:-1])
 
 option = int(input("Enter 1 for encode and 2 for decode: "))
 
@@ -28,3 +26,4 @@ elif option == 2:
 else:
   print("invalid input ")
   
+
