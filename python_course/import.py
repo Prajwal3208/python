@@ -12,6 +12,7 @@
 
 # from prajwal import sum
 # sum(2,3)
+#it prints 2 time why that see n\in next lecture
 
 from math import sqrt, pi 
 
